@@ -5,21 +5,21 @@
 class Wktr < Formula
   desc "Manage git worktrees with tmux integration"
   homepage "https://github.com/robinjoseph08/wktr"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/robinjoseph08/wktr/releases/download/v0.3.0/wktr_0.3.0_darwin_amd64.tar.gz"
-      sha256 "6a3acbb5886a3e0158653eb803728a6d75071ed1451100a1be1ea9bb8f84c8dd"
+      url "https://github.com/robinjoseph08/wktr/releases/download/v0.4.0/wktr_0.4.0_darwin_amd64.tar.gz"
+      sha256 "d59a5d56af9a0de1cd79bb6af8ab2a3c72d1cb1fa60793f1b232f3af93e72096"
 
       define_method(:install) do
         bin.install "wktr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/robinjoseph08/wktr/releases/download/v0.3.0/wktr_0.3.0_darwin_arm64.tar.gz"
-      sha256 "21b320a96253c0ee08af42f833e2a0b7e7a48beb22de26fa86b6bb0346c8c6ad"
+      url "https://github.com/robinjoseph08/wktr/releases/download/v0.4.0/wktr_0.4.0_darwin_arm64.tar.gz"
+      sha256 "485ae8bef182babe8f811c430e5942af995014e3b2fcfa70f116ddca800658e0"
 
       define_method(:install) do
         bin.install "wktr"
@@ -29,15 +29,15 @@ class Wktr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robinjoseph08/wktr/releases/download/v0.3.0/wktr_0.3.0_linux_amd64.tar.gz"
-      sha256 "beed1f9f6861771ace12bc70de406cd75b0147d178d7271ea02d7791cc0d8e90"
+      url "https://github.com/robinjoseph08/wktr/releases/download/v0.4.0/wktr_0.4.0_linux_amd64.tar.gz"
+      sha256 "565b41d8fcbb9296facf224bbe098bea24c338c851a308f4cb40b6f8e6c1f6f7"
       define_method(:install) do
         bin.install "wktr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/robinjoseph08/wktr/releases/download/v0.3.0/wktr_0.3.0_linux_arm64.tar.gz"
-      sha256 "74b07bbfb5172caa8656349c1a938eaf86526544beab23076ea1de7d3fbeb0d9"
+      url "https://github.com/robinjoseph08/wktr/releases/download/v0.4.0/wktr_0.4.0_linux_arm64.tar.gz"
+      sha256 "fbba72c7a890771e065dcb0177ff447614df5eef77751909587a3301e0fbb2af"
       define_method(:install) do
         bin.install "wktr"
       end
